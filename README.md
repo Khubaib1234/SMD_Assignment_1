@@ -90,14 +90,3 @@ flutter run
 * CORS handled via proxy for web
 * Some responses depend on mock API behavior
 
----
-
-## Screenshots
-
-### To-Do Screen
-
-![To-Do List](images/todo_list.png)
-
-### To-Do Screen
-
-![Add Task](images/add_task.png)
