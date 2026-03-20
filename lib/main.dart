@@ -3,11 +3,6 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-
-// ─────────────────────────────────────────────
-// MODELS
-// ─────────────────────────────────────────────
-
 class Todo {
   final int? id;
   final String title;
@@ -89,10 +84,6 @@ class PaginatedResponse {
     );
   }
 }
-
-// ─────────────────────────────────────────────
-// API SERVICE
-// ─────────────────────────────────────────────
 
 class ApiException implements Exception {
   final String message;
@@ -284,10 +275,6 @@ class TodoApiService {
   void dispose() => _client.close();
 }
 
-// ─────────────────────────────────────────────
-// MAIN
-// ─────────────────────────────────────────────
-
 void main() => runApp(const TodoApp());
 
 class TodoApp extends StatelessWidget {
@@ -339,10 +326,6 @@ class TodoApp extends StatelessWidget {
     );
   }
 }
-
-// ─────────────────────────────────────────────
-// TODO LIST SCREEN
-// ─────────────────────────────────────────────
 
 class TodoListScreen extends StatefulWidget {
   const TodoListScreen({super.key});
@@ -520,10 +503,6 @@ class _TodoListScreenState extends State<TodoListScreen> {
   }
 }
 
-// ─────────────────────────────────────────────
-// ADD TODO SCREEN
-// ─────────────────────────────────────────────
-
 class AddTodoScreen extends StatefulWidget {
   final TodoApiService api;
   const AddTodoScreen({super.key, required this.api});
@@ -678,10 +657,6 @@ class _AddTodoScreenState extends State<AddTodoScreen> {
     );
   }
 }
-
-// ─────────────────────────────────────────────
-// WIDGETS
-// ─────────────────────────────────────────────
 
 class _TodoTile extends StatelessWidget {
   final Todo todo;
