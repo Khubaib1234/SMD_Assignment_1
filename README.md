@@ -96,8 +96,9 @@ flutter run
 
 ### To-Do Screen
 
-![To-Do List](images/todo_list.png)
+![To-Do List](images/todo screen.png)
 
 ### To-Do Screen
 
-![Add Task](images/add_task.png)
+![Add Task](images/add-task-screen.png)
+
